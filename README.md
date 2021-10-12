@@ -2,6 +2,7 @@
 Are your finals coming up? Do you need a tool to help you memorize what you need to ace that exam? Flashcards is here to provide you an easy and simple way to create flashcards on the fly. You can then quiz yourself on those flash cards and check your performance!
 
 ## Tested on ANDROID
+This app was tested on android.
 
 <p>
   <!-- iOS -->
