@@ -1,4 +1,5 @@
-# My Universal React Project
+# Mobile Flashcards
+Are your finals coming up? Do you need a tool to help you memorize what you need to ace that exam? Flashcards is here to provide you an easy and simple way to create flashcards on the fly. You can then quiz yourself on those flash cards and check your performance!
 
 <p>
   <!-- iOS -->
@@ -17,7 +18,7 @@
 
 ## 🚀 How to use
 
-- Install packages with `yarn` or `npm install`.
+- Install packages with `yarn install` or `npm install`.
   - If you have native iOS code run `npx pod-install`
 - Run `yarn start` to start the bundler.
 - Open the project in a React runtime to try it:
