@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { View, Text, TextInput, StyleSheet, TouchableOpacity } from "react-native";
 import { connect } from 'react-redux'
 import DeckCard from "./DeckCard"
-import { formatDeck, createDeck, deleteDeck } from "../utils/api"
+import { formatDeck, createDeck, deleteDeck, clearLocalNotification, setLocalNotification } from "../utils/api"
 import { addDeckAction, deleteDeckAction } from "../actions/decks"
 
 class Quiz extends Component
@@ -20,6 +20,8 @@ class Quiz extends Component
 		this.setState({
 			questions: questions
 		})
+
+		clearLocalNotification().then(setLocalNotification())
 	}
 	
 	showAnswer = (e) => {

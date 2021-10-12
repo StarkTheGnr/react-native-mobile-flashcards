@@ -80,7 +80,7 @@ export function setLocalNotification()
 	.then((data) => {
 		if (data === null)
 		{
-			Notifications.requestPermissionsAsync()
+			Notifications.requestPermissionsAsync(null)
 			.then(({ status }) => {
 				if (status === "granted")
 					Notifications.cancelAllScheduledNotificationsAsync()
@@ -104,7 +104,11 @@ export function setLocalNotification()
 						title: "You haven't studied today",
 						body: "Knowledge is power! So, come power up by taking a quiz!"
 					}, 
-					tomorrow
+					trigger: {
+						hour: 20,
+						minute: 0,
+						repeats: true
+					}
 				})
 
 				AsyncStorage.setItem(NOTIFICATION_KEY, JSON.stringify(true))
